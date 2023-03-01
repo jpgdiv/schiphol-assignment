@@ -1,0 +1,31 @@
+.card {
+    background-color: $card-background-color;
+    padding: $card-padding;
+
+    @include mobile {
+        max-width: 100%;
+    }
+    @include tablet {
+        max-width: 15rem;
+        
+    }
+    @include desktop {
+        max-width: 20rem;
+    }
+
+    &--sm {
+        
+    }
+    &--lg {
+        max-width: 100%;
+    }
+
+    &--header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &--badge { 
+            color: $badge-color;
+        }
+    }
+}

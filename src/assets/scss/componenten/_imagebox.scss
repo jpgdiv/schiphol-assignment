@@ -1,0 +1,26 @@
+
+.imagebox {
+    overflow: hidden;
+
+    &--sm {
+        max-height: 20rem;
+      }
+    &--xl {
+        max-height: 40rem;
+    }
+
+    img {
+    
+        width: 200%;
+
+        @include mobile {
+            width: 150%;
+        }
+        @include tablet {
+            width: 125%;
+        }
+        @include desktop {
+            width: 100%;
+        }
+    }
+}

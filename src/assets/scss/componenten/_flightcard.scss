@@ -1,0 +1,27 @@
+.flightcard {
+    border-bottom: 2px solid $flightcard-border-color;
+    background-color: $flightcard-background-color;
+    margin: $grid-padding-sm;
+    padding: $grid-padding-sm;
+    
+    &--flight {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &--airport {
+            color: $flightcard-airport-text-color;
+        }
+    }
+
+    &--time {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &--id {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}

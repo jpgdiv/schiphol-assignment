@@ -1,0 +1,28 @@
+
+.cardcontainer {
+
+    display: grid;
+
+    &--lg {
+     padding: $grid-padding-lg;
+
+    }
+
+    &--sm {
+        padding: $grid-padding-sm;
+    }
+
+    @include mobile {
+        grid-template-columns: 100%;
+
+    }
+    @include tablet {
+        grid-template-columns: 50% 50%;
+    }
+    @include desktop {
+        grid-template-columns: 50% 50%;
+    }
+    
+
+    grid-template-rows: max-content()
+}

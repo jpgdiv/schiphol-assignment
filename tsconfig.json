@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "sourceMap": true,
+    "outDir": "./public/",
+    "jsx": "react-jsx",
+    "lib": ["dom", "dom.iterable", "esnext", "webworker"],
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node"
+  }
+}

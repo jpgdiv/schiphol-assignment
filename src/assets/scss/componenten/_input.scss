@@ -1,0 +1,84 @@
+
+
+.sh-radio-group {
+    display: flex;
+}
+.sh-radio-group  > * {
+    margin-right: 2rem;
+}
+
+.sh-input {
+    &--text {
+        input {
+            background-color: $input-bg-color;
+            padding-left: $input-text-spacing;
+
+            width: calc(100% - $input-text-spacing);
+            display: flex;
+            height: 3rem;
+            border: 0px;
+            box-shadow: 0 0.25rem 0.75rem rgb(20 18 81 / 0%);
+            font-size: 1rem;
+            border: $input-border-size solid $input-border-color;
+            &:focus-visible {
+                border-bottom-color: $input-border-color-focus;
+                box-shadow: 0 0.25rem 0.75rem rgb(20 18 81 / 20%);
+                outline: 0;
+            }
+            &::placeholder {
+                color: $input-placeholder-color;
+            }
+        }
+
+    }
+
+    &--radio {
+
+        label {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            span {
+                margin-right:$input-text-spacing;
+            }
+        }
+
+        input {
+            overflow: hidden; clip: rect(0 0 0 0); 
+            position: absolute; 
+            height: 2px; 
+            width: 2px;
+            margin: -2px;
+            border: 0; 
+            &:focus + span {
+                border-width: $input-radio-border-size-focus;
+                margin: 0px;
+                margin-right:  calc( $input-text-spacing - ( $input-radio-border-size-focus - $input-border-size)); 
+                border-color: $input-radio-border-color-focus;
+            }
+            &:checked + span::after {
+                opacity: 1;
+            }
+        }
+
+        span {
+            position: relative;
+            display: block; width: 16px; height: 16px; margin-bottom: 0;
+            background: #fff;
+            margin: calc($input-radio-border-size-focus - $input-border-size);
+            
+            border: $input-border-size solid $input-border-color;
+            border-radius: 50%;
+            vertical-align: middle;
+
+            &:after {
+                content: '';
+                opacity: 0;
+                position: absolute; top: 2px; left: 2px; right: 2px; bottom: 2px;
+                background: #00f; border-radius: 50%;
+            }
+        }
+    }
+}
+ 
+

@@ -1,0 +1,43 @@
+
+$font-family: Neue Frutiger, sans-serif !default;
+
+
+$navbar-height: var(--size-xxl) !default;
+$navbar-bottom-border-color: var(--gradient-at-schiphol) !default;
+$navbar-padding: var(--size-lg) !default;
+$navbar-bottom-border: 4px;
+
+
+$card-background-color: var(--grey-few)!default;
+$card-padding: var(--size-sm) !default;
+ 
+
+$container-mobile-width: 30rem;
+$container-tablet-width: 50rem;
+$container-desktop-width: 70rem;
+
+$grid-padding-lg: var(--size-sm) !default;
+$grid-padding-sm: var(--size-xs) !default;
+
+$badge-color: var(--morning-pink) !default;
+
+$flightcard-border-color: var(--morning-pink);
+$flightcard-background-color: var(--grey-scattered);
+$flightcard-airport-text-color: var(--afternoon-blue);
+
+
+$input-bg-color: var(--white);
+$input-border-color: var(--grey-scattered);
+$input-border-color-focus: var(--afternoon-blue);
+$input-text-spacing: var(--size-xs);
+$input-border-size: 0.0625rem;
+$input-placeholder-color: var(--grey-broken);
+
+$input-radio-border-color-focus: var(--morning-pink);
+$input-radio-border-size-focus: 4px;
+
+$breakpoints: (
+  xs: 30rem,
+  md: 50rem,
+  xl: 70rem,
+);

@@ -1,0 +1,14 @@
+
+
+body {
+    // no explicit font-size here because we respect the browser default
+    font-family: $font-family;
+    // use font-kerning information stored in the font
+    font-kerning: normal;
+    line-height: 1.5;
+    color: var(--schiphol-blue)
+}
+
+a {
+    color: var(--schiphol-blue)
+}
